@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="fortuneTeller" translatesAutoresizingMaskIntoConstraints="NO" id="THJ-wD-bEP">
+                                <rect key="frame" x="14" y="126" width="284" height="346"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-rC-0im">
+                                <rect key="frame" x="104" y="509" width="104" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="1PI-q3-TRh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Click to make a prediction" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGW-1p-oaa">
+                                <rect key="frame" x="104" y="317" width="82" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="5R6-bj-Wg7"/>
+                                    <constraint firstAttribute="width" constant="82" id="Gky-oS-Cc4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Chaendra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W41-yE-FuG">
+                                <rect key="frame" x="56" y="40" width="208" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dGW-1p-oaa" firstAttribute="leading" secondItem="YYh-rC-0im" secondAttribute="leading" id="2Js-KH-JCJ"/>
+                            <constraint firstItem="YYh-rC-0im" firstAttribute="centerX" secondItem="THJ-wD-bEP" secondAttribute="centerX" id="4qr-KJ-Tw2"/>
+                            <constraint firstAttribute="bottom" secondItem="dGW-1p-oaa" secondAttribute="bottom" constant="158" id="7dk-aU-UKV"/>
+                            <constraint firstItem="W41-yE-FuG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="40" id="7u1-Nf-HOl"/>
+                            <constraint firstAttribute="bottom" secondItem="YYh-rC-0im" secondAttribute="bottom" constant="20" symbolic="YES" id="MHb-5o-hmp"/>
+                            <constraint firstItem="YYh-rC-0im" firstAttribute="top" secondItem="THJ-wD-bEP" secondAttribute="bottom" constant="37" id="Mnp-mr-Br4"/>
+                            <constraint firstAttribute="centerX" secondItem="W41-yE-FuG" secondAttribute="centerX" id="toO-Ed-WtY"/>
+                            <constraint firstAttribute="centerX" secondItem="W41-yE-FuG" secondAttribute="centerX" id="ze5-c8-odc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLabel" destination="YYh-rC-0im" id="QBg-gH-JfP"/>
+                        <outlet property="predictionLabel" destination="dGW-1p-oaa" id="b04-bF-z7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fortuneTeller" width="346" height="346"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

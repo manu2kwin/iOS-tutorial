@@ -40,6 +40,7 @@
 		2FFAAF091A5FA492009E6F1E /* Simple iOS AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple iOS AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFAAF0E1A5FA492009E6F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FFAAF0F1A5FA492009E6F1E /* Simple_iOS_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_iOS_AppTests.m; sourceTree = "<group>"; };
+		2FFAAF771A605220009E6F1E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				2FFAAEF21A5FA492009E6F1E /* Simple iOS App */,
 				2FFAAF0C1A5FA492009E6F1E /* Simple iOS AppTests */,
 				2FFAAEF11A5FA492009E6F1E /* Products */,
+				2FFAAF771A605220009E6F1E /* PrefixHeader.pch */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,6 +416,7 @@
 				2FFAAF151A5FA492009E6F1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FFAAF161A5FA492009E6F1E /* Build configuration list for PBXNativeTarget "Simple iOS AppTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +425,7 @@
 				2FFAAF181A5FA492009E6F1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
