@@ -15,6 +15,7 @@
     
     myLabel.text = [NSString stringWithFormat: @"Welcome to %@'s Games. \n She is the best booboo!", myTextField.text];
     NSLog(@"Games");
+    NSLog(@"Playing games");
     
     
 }
